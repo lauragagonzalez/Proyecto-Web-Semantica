@@ -5,11 +5,11 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 
 ## Integrantes del Grupo
 
-| Nombre               | Usuario de GitHub       |
-|----------------------|-------------------------|
-| Candela Espinar      | @                       |
-| Antía Sande Fernández| @                       |
-| Ada Moral Merino     | @                       |
+| Nombre                  | Usuario de GitHub       |
+|-------------------------|-------------------------|
+| Candela Espinar Paisan  | @                       |
+| Antía Sande Fernández   | @                       |
+| Ada Moral Merino        | @                       |
 
 ## Estructura del Proyecto
 
