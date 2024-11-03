@@ -1,15 +1,17 @@
 # Proyecto Web Semántica (Datos sobre Accidentes de Tráfico en Madrid) - Grupo XX
 
 ## Descripción del Proyecto
-Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en la ciudad de Madrid durante los años 2022, 2023 y 2024. Utilizando estos datos, el objetivo es construir una aplicación que permita visualizar y analizar patrones de accidentalidad, proporcionando información útil para entender mejor los factores y ubicaciones de riesgo en la ciudad.
+Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en la ciudad de Madrid durante los años 2022, 2023 y 2024. 
 
 ## Integrantes del Grupo
 
-| Nombre                  | Usuario de GitHub       |
-|-------------------------|-------------------------|
-| Candela Espinar Paisan  | @                       |
-| Antía Sande Fernández   | @                       |
-| Ada Moral Merino        | @                       |
+| Nombre                    | Usuario de GitHub       |
+|---------------------------|-------------------------|
+| Candela Espinar Paisan    | @                       |
+| Antía Sande Fernández     | @                       |
+| Ada Moral Merino          | @                       |
+| Laura García González     |                         |
+| Lucía Martínez Miramontes |
 
 ## Estructura del Proyecto
 
@@ -29,11 +31,6 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 ## Descripción de los Datos
 Cada archivo CSV contiene los datos de accidentes de tráfico reportados en Madrid en un año específico, incluyendo información relevante como la fecha, ubicación, tipo de accidente y factores asociados. Estos datos serán utilizados para desarrollar una aplicación de análisis de tráfico que permita visualizar los accidentes en un mapa interactivo y generar estadísticas.
 
-## Objetivo de la Aplicación
-La aplicación buscará:
-1. Visualizar los accidentes en un mapa de la ciudad de Madrid.
-2. Permitir el filtrado por tipo de accidente, gravedad y ubicación.
-3. Generar estadísticas para el análisis de patrones de accidentalidad.
 
 ## Licencia
 Los datos utilizados en este proyecto son de acceso público y cuentan con una licencia abierta, permitiendo su uso y publicación en aplicaciones de terceros.
