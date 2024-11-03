@@ -29,7 +29,7 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 - **selfAssessmentHandsOn1.md**: Documento de autoevaluación de la práctica realizada por el grupo.
 
 ## Descripción de los Datos
-Cada archivo CSV contiene los datos de accidentes de tráfico reportados en Madrid en un año específico, incluyendo información relevante como la fecha, ubicación, tipo de accidente y factores asociados. Estos datos serán utilizados para desarrollar una aplicación de análisis de tráfico que permita visualizar los accidentes en un mapa interactivo y generar estadísticas.
+Cada archivo CSV contiene los datos de accidentes de tráfico reportados en Madrid en un año específico, incluyendo información relevante como la fecha, ubicación, tipo de accidente y factores asociados. 
 
 
 ## Licencia
