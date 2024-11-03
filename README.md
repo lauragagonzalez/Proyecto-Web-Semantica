@@ -1,6 +1,4 @@
-# Proyecto Web Semántica
-
-# Grupo XX - Proyecto de Datos sobre Accidentes de Tráfico en Madrid
+# Proyecto Web Semántica (Datos sobre Accidentes de Tráfico en Madrid) - Grupo XX
 
 ## Descripción del Proyecto
 Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en la ciudad de Madrid durante los años 2022, 2023 y 2024. Utilizando estos datos, el objetivo es construir una aplicación que permita visualizar y analizar patrones de accidentalidad, proporcionando información útil para entender mejor los factores y ubicaciones de riesgo en la ciudad.
@@ -9,9 +7,9 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 
 | Nombre               | Usuario de GitHub       |
 |----------------------|-------------------------|
-| Candela Espinar      | @candelaEsp             |
-| Antía Sande Fernández| @antiaSande             |
-| Ada Moral Merino     | @adaMoral               |
+| Candela Espinar      | @                       |
+| Antía Sande Fernández| @                       |
+| Ada Moral Merino     | @                       |
 
 ## Estructura del Proyecto
 
