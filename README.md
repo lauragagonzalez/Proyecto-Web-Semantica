@@ -7,9 +7,9 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 
 | Nombre                    | Usuario de GitHub       |
 |---------------------------|-------------------------|
-| Candela Espinar Paisan    | @                       |
-| Antía Sande Fernández     | @                       |
-| Ada Moral Merino          | @                       |
+| Candela Espinar Paisan    | CandelaEspinar          |
+| Antía Sande Fernández     | antiasande              |
+| Ada Moral Merino          | adaamoral               |
 | Laura García González     |                         |
 | Lucía Martínez Miramontes |
 
