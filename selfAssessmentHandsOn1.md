@@ -1,6 +1,6 @@
 # Autoevaluación de Hands-On 1
 
-## Grupo 05
+## Grupo 06
 
 ### Tareas Realizadas
 1. Identificación y selección de un conjunto de datos sobre accidentes de tráfico en Madrid, cubriendo los años 2022, 2023 y 2024.
