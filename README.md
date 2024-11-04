@@ -10,7 +10,7 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 | Candela Espinar Paisan    | CandelaEspinar          |
 | Antía Sande Fernández     | antiasande              |
 | Ada Moral Merino          | adaamoral               |
-| Laura García González     |                         |
+| Laura García González     | lauragagonzalez                        |
 | Lucía Martínez Miramontes |
 
 ## Estructura del Proyecto
