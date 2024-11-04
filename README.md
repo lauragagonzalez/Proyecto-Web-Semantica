@@ -1,4 +1,4 @@
-# Proyecto Web Semántica (Datos sobre Accidentes de Tráfico en Madrid) - Grupo XX
+# Proyecto Web Semántica (Datos sobre Accidentes de Tráfico en Madrid)
 
 ## Descripción del Proyecto
 Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en la ciudad de Madrid durante los años 2022, 2023 y 2024. 
