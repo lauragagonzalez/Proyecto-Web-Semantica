@@ -10,10 +10,10 @@ Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en
 | Candela Espinar Paisan    | CandelaEspinar          |
 | Antía Sande Fernández     | antiasande              |
 | Ada Moral Merino          | adaamoral               |
-| Laura García González     | lauragagonzalez                        |
-| Lucía Martínez Miramontes |
+| Laura García González     | lauragagonzalez         |
+| Lucía Martínez Miramontes | lucim04                 |
 
-## Estructura del Proyecto
+# Estructura del Proyecto
 
 - **csv/**: Contiene los archivos CSV con los datos de accidentalidad para cada año.
   - `2022_Accidentalidad.csv`: Datos de accidentes de tráfico en Madrid en 2022.
