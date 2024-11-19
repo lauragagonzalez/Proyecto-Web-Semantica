@@ -1,41 +1,53 @@
-# Proyecto Web Semántica (Datos sobre Accidentes de Tráfico en Madrid)
+Course 2024-2025-DataScience
+============================
 
-## Descripción del Proyecto
-Este proyecto se enfoca en el análisis de datos sobre accidentes de tráfico en la ciudad de Madrid durante los años 2022, 2023 y 2024. 
+This is the repository that we will use for our collaborative work and for uploading all the assignments for our course.
 
-## Integrantes del Grupo
+This is the normal process that you will have to follow in order to interact with the repository:
 
-| Nombre                    | Usuario de GitHub       |
-|---------------------------|-------------------------|
-| Candela Espinar Paisan    | CandelaEspinar          |
-| Antía Sande Fernández     | antiasande              |
-| Ada Moral Merino          | adaamoral               |
-| Laura García González     |                         |
-| Lucía Martínez Miramontes |
-
-## Estructura del Proyecto
-
-- **csv/**: Contiene los archivos CSV con los datos de accidentalidad para cada año.
-  - `2022_Accidentalidad.csv`: Datos de accidentes de tráfico en Madrid en 2022.
-  - `2023_Accidentalidad.csv`: Datos de accidentes de tráfico en Madrid en 2023.
-  - `2024_Accidentalidad.csv`: Datos de accidentes de tráfico en Madrid en 2024.
-
-- **requirements/**: Contiene los documentos HTML que describen los requisitos del proyecto.
-  - `datasetRequirements.html`: Evaluación de los requisitos de los datos seleccionados.
-  - `applicationRequirements.html`: Especificación de la aplicación que se desarrollará, incluyendo mock-ups de las interfaces.
-
-- **README.md**: Este archivo, que proporciona una descripción general del proyecto.
-
-- **selfAssessmentHandsOn1.md**: Documento de autoevaluación de la práctica realizada por el grupo.
-
-## Descripción de los Datos
-Cada archivo CSV contiene los datos de accidentes de tráfico reportados en Madrid en un año específico, incluyendo información relevante como la fecha, ubicación, tipo de accidente y factores asociados. Estos datos serán utilizados para desarrollar una aplicación de análisis de tráfico que permita visualizar los accidentes en un mapa interactivo y generar estadísticas.
-
-## Objetivo de la Aplicación
-La aplicación buscará:
-1. Visualizar los accidentes en un mapa de la ciudad de Madrid.
-2. Permitir el filtrado por tipo de accidente, gravedad y ubicación.
-3. Generar estadísticas para el análisis de patrones de accidentalidad.
+* Fork the main repository into your own account (this will generate a new repository in your GitHub account). This is done only once during the course. 
+* If you had already forked the repository some time ago, you may want to sync your repository to the latest version that is now available. This is done by [configuring the remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork) and [syncing your fork](https://help.github.com/articles/syncing-a-fork). Basically, you have to:
+ * Establish remote: 
  
-## Licencia
-Los datos utilizados en este proyecto son de acceso público y cuentan con una licencia abierta, permitiendo su uso y publicación en aplicaciones de terceros.
+        git remote add upstream https://github.com/FacultadInformatica-LinkedData/Curso2024-2025-DataScience
+
+ * Fetch any changes to it: 
+ 
+        git fetch upstream
+ 
+ * Checkout the local master branch of your fork: 
+ 
+        git checkout master
+ 
+ * Merge changes from the remote into your master branch: 
+ 
+        git merge upstream/master
+
+* Make any changes to your repository, according to the specific assignment
+* Commit your changes into your local repository
+* Push your changes to your online repository
+* Make a pull request, so that we can check your changes and accept them into the master of the general repository. If everything is ok, your changes will be incorporated into the main repository. If not, you will receive a message of why not.
+
+**Assignment 1**. Please fill in a line with a dataset description at folder [Assignment 1](./Assignment1/DatasetDescriptions.csv), as discussed in the course moodle site, and make a pull request
+
+**The following set of instructions will be updated as we progress during the course**
+
+**Assignment 2a - Exercise on RDF and RDFS**. Upload the RDF files corresponding to the exercise in the GitHub repository, and comment on those from your colleagues (if you wish), creating issues in the GitHub repository. This can be done in the [Assignment2](./Assignment2/) folder, **using your GitHub username - your NameSurname** + (.png/.svg) and (.rdf/.ttl), or any other similar file extension.
+
+For example, I (my Github username is 'ocorcho') would upload two files :
+* ocorcho-OscarCorcho.png (the image, Exercise 1.a) 
+* ocorcho-OscarCorcho.ttl (Exercise 1.b in Turtle).
+
+**Assignment 2b - Exercise on RDF and RDFS (second part)**. Upload to the GitHub repository the JSON-LD files corresponding to the exercises described in the slides. This can be done in the Assignment2 folder, using the following names:
+* your GitHub username + fromRDFtoJSON-LD.jsonld
+* your GitHub username + fromJSONtoJSON-LD.jsonld
+
+For example, I (my Github username is 'ocorcho') would upload two files :
+* ocorcho-fromRDFtoJSON-LD.jsonld
+* ocorcho-fromJSONtoJSON-LD.jsonld
+
+**Assignment 3 - SPARQL**. Upload the SPARQL queries and their results after completing the completing the tasks mentioned in the slides. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment3/dchaves-u120106/) in [Assignment3](./Assignment3/) folder.
+
+**Assignment 4 - Exercise on RDFLib**. Upload the .py or .ipynb files Task06 and Task07 after completing the tasks 6.x and 7.x mentioned in those files. Before uploading the files create a folder with your **YourGitHubID-StudentID** (e.g., Assignment4/dchaves-u120106/) in [Assignment4](./Assignment4/) folder.
+
+

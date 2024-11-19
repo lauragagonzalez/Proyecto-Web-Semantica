@@ -7,23 +7,150 @@
 </head>
 <body>
     <h1>Análisis de Dataset y Estrategia de Datos Vinculados</h1>
-    
+
     <!-- Análisis del Conjunto de Datos -->
     <section>
         <h2>1. Análisis del Conjunto de Datos</h2>
         <p>
-            <strong>Descripción del Dataset:</strong> Nuestro Dataset nos muestra los detalles sobre accidente de tráfico en madrid según el año.
-            Nos aporta datos como la hora a la que se provocó, el lugar, el estado meteorológico y el tipo de vehículo entre otras cosas.
+            <strong>Descripción:</strong> Nuestros datasets nos muestran los detalles sobre los accidente de tráfico en madrid según el año (2022-2024).
+            Nos aportan datos como la hora a la que se provocó, el lugar, el estado meteorológico y el tipo de vehículo entre otras cosas.
+        </p>
+
+        <!-- Análisis del Esquema-->
+        <p>
+            <strong>Análisis del Esquema:</strong>
         </p>
         <p>
-            <strong>Análisis de Datos:</strong> 
+            Los tres csv están estructurados de la misma forma, es decir, la tabla de datos contiene las mismas columnas en el mismo orden.
+            Para el análisis del esquema se expondran las categorías de datos (es decir, las columnas), los tipos de datos, las relaciones entre columnas y finalmente si existen inconsistencias en los datos.
         </p>
         <p>
-            <strong>Hemos elegido tres csv y cada uno nos aporta valores numéricos diferentes ya que son de diferentes años, pero contienen el mismo tipo de información</strong> 
+            <strong>Columnas (datos proporcionados):</strong>
         </p>
+        <ul>
+            <li><strong>Número de expediente:</strong> Se refiere al número que señala cada caso</li>
+            <li><strong>Fecha:</strong> Fecha a la que ocurrió el accidente en formato DD/MM/AA </li>
+            <li><strong>Hora:</strong> Hora del accidente en fromado HH:MM:SS</li>
+            <li><strong>Localización:</strong> Se indica el lugar donde ocurrió el accidente, especificando su número de calle, el distrito y el código del distrito en diferentes columnas.</li>
+            <li><strong>Tipo_Accidente:</strong> Cada accidente corresponde a un cierto tipo de una ennumeracion de valores, hay doce tipos de accidentes:
+                <ul>
+                    <li>Alcance</li>
+                    <li>Atropello animal</li>
+                    <li>Atropello a persona</li>
+                    <li>Caída</li>
+                    <li>Choque contra obstáculo fijo</li>
+                    <li>Colisión frontal</li>
+                    <li>Colisión fronto-lateral</li>
+                    <li>Colisión lateral</li>
+                    <li>Colisión múltiple</li>
+                    <li>Despeñamiento</li>
+                    <li>Otro</li>
+                    <li>Salida de la vía</li>
+                    <li>Vuelco</li>
+                </ul>
+            </li>
+            <li><strong>Estado_meteorológico:</strong> Tipo de clima que había cuando ocurrió el accidente
+                <ul>
+                    <li>Despejado</li>
+                    <li>Granizado</li>
+                    <li>Lluvia débil</li>
+                    <li>Lluvia intensa</li>
+                    <li>Nevado</li>
+                    <li>Nublado</li>
+                    <li>Null</li>
+                    <li>Se desconoce</li>
+                </ul>
+            </li>
+            <li><strong>Tipo_vehiculo:</strong> Vehículo que provocó el accidente, los valores de esta categoría son los nombres técnicos de los vehículos</li>
+            <li><strong>Tipo_persona:</strong>Persona que sufrió el accidente, habiendo como posibilidades conductor, pasajero y peatón</li>
+            <li><strong>Rango_edad:</strong>Rango de edad de la persona que provocó el accidente</li>
+            <li><strong>Sexo:</strong>Sexo de la persona pudiendo ser este hombre, mujer o desconocido</li>
+            <li><strong>Lesividad:</strong> Se refiere al tipo de asistencia sanitario que recibió la persona, también se incluye en otra columna el codigo de lesividad
+                <ul>
+                    <li>Asistencia sanitaria ambulatoria con posteridad</li>
+                    <li>Asistencia sanitaria ambulatoria inmediata</li>
+                    <li>Asistencia solo en el lugar del accidente</li>
+                    <li>Asintencia sin ingreso</li>
+                    <li>Fallecido 24 horas</li>
+                    <li>Ingreso </li>
+                    <li>Se desconoce</li>
+                    <li>Sin asistencia</li>
+                </ul>
+            </li>
+            <li><strong>Coordenadas_num:</strong> Lugar del accidente en coordenadas (las coordenadas x e y se dividen en dos columnas)</li>
+            <li><strong>Positiva_alcohol:</strong> Indica si la persona que provocó el accidente iba bajos los efectos del alcohol</li>
+            <li><strong>Positiva_droga:</strong> Indica si la persona que provocó el accidente iba bajos los efectos de las drogas</li>
+        </ul>
+
+        <p>
+            <strong>Tipos de datos:</strong>
+        </p>
+
+        <ul>
+            <li><strong>String:</strong> Datos de tipo string</li>
+                <ul>
+                    <li>Número de expediente</li>
+                    <li>Localización</li>
+                    <li>Distrito</li>
+                    <li>Tipo_Accidente</li>
+                    <li>Estado_meteorológico</li>
+                    <li>Tipo_vehiculo</li>
+                    <li>Tipo_persona</li>
+                    <li>Rango_edad</li>
+                    <li>Sexo</li>
+                    <li>Lesividad</li>
+                    <li>Positiva_alcohol</li>
+                    <li>Positiva_droga</li>
+                </ul>
+            <li><strong>Date:</strong>Datos de tipo date (DD/MM/YYYY)</li>
+                <ul>
+                    <li>Fecha</li>
+                </ul>
+            <li><strong>Time:</strong>Datos de tipo time</li>
+                <ul>
+                    <li>Hora</li>
+                </ul>
+            <li><strong>Integer:</strong>Datos de tipo integer</li>
+                <ul>
+                    <li>Numero</li>
+                    <li>Cod_distrito</li>
+                    <li>Cod_lesividad</li>
+                    <li>Coordenadas_x_utm</li>
+                    <li>Coordenadas_y_utm</li>
+                </ul>
+        </ul>
+
+        <p>
+            <strong>Relaciones entre columnas:</strong> Todos los datos de cada fila son propiedades del accidente al que se refiere la fila (los cuales estan ennumerados).
+            Como se ha explicado brevemente en el analisis de los datos proporcionados, hay ciertas columnas que se relacionan entre sí. Las columnas localización, número, código de distrito, distrito, coordenadas x y coordenadas y componen en su totalidad la dirección en al que se dió el accidente.
+            A mayores, las columnas tipo de persona, rango de edad, sexo y lesividad proporcionan información sobre la "víctima" del accidente en cuestión, a su vez la columna codigo de lesividad se relaciona con la de lesividad.
+        </p>
+
+        <p>
+            <strong>Inconsistencias:</strong> Como inconsistencias notarias en algunas categorias hay ciertos valores del tipo Null, desconocido, no se sabe, etc. En cuenta a inconsistencias de tipo no se han encontrado ninguna y los datos parecen estar en el formato correcto a lo largo de los tres csv.
+        </p>
+
+
+        <p>
+            <strong>Análisis de Datos:</strong>
+        </p>
+        <p>
+            <strong>Hemos elegido tres csv y cada uno nos aporta valores numéricos diferentes ya que son de diferentes años, pero contienen el mismo tipo de información</strong>
+        </p>
+
+        <p>
+            <strong>Análisis de rangos y valores (general):</strong>
+        </p>
+        <ul>
+            <li>Fecha:</li> Las fechas alcanzan desde el 1 de enero del año en cuestión hasta el 12 de diciembre, excepto en el caso de los datos del 2024 que solo llegan hasta el final de agosto.
+            <li>Hora:</li> Se incluyen las 24 horas del día, no obstante, a pesar de enseñar los segundos los valores solo llegan a precisar la hora y los minutos.
+            <li>Positiva alcohol y droga:</li> Su rango de valores incluye S (sí/ positivo), N (no/ negativo).
+            <li>Otros:</li> En aquellos datos cuyo valor es uno de una ennumeración de posibilidades ya se han especificado, otros son simplemente valores numericos o strings especificos como la localización y el número de expediente.
+        </ul>
+
         <!-- Análisis del Conjunto de Datos 2022 -->
         <p>
-            <strong>2022_Accidentalidad.csv:</strong> 
+            <strong>2022_Accidentalidad.csv:</strong>
         </p>
         <p>
             Los datos recolectados sobre los accidentes de tráfico en 2022 son los siguientes:
@@ -89,7 +216,7 @@
         </ul>
         <!-- Análisis del Conjunto de Datos 2023 -->
         <p>
-            <strong>2023_Accidentalidad.csv:</strong> 
+            <strong>2023_Accidentalidad.csv:</strong>
         </p>
         <p>
             Los datos recolectados sobre los accidentes de tráfico en 2023 son los siguientes:
@@ -154,7 +281,7 @@
         </ul>
         <!-- Análisis del Conjunto de Datos 2024 -->
         <p>
-            <strong>2024_Accidentalidad.csv:</strong> 
+            <strong>2024_Accidentalidad.csv:</strong>
         </p>
         <p>
             Los datos recolectados sobre los accidentes de tráfico en 2024 son los siguientes:
@@ -219,7 +346,7 @@
 
         <!-- Análisis de los resultados -->
         <p> vamos a analizar cuales de los datos dados nos vas a servir para nuestra aplicación y veamos como varian según el año</p>
-        <p> Las columnas más relevantes son la localización y la hora del día a la que se produce el accidente, si queremos hacer una aplicación 
+        <p> Las columnas más relevantes son la localización y la hora del día a la que se produce el accidente, si queremos hacer una aplicación
             que solo diga donde es más propenso que se produzca un accidente.
             Ahora si queremos saber estadisticamente cual es la posibilidad de que tengamos un accidente teniendo en cuneta más detalles
             como el auotmóvil, la edad y la columna que no indica si hemos consumido alcohol o drogas.
@@ -234,76 +361,12 @@
             y la colisión lateral.
         </p>
 
-        <!-- Análisis del Esquema-->
-        <p>
-            <strong>Análisis del Esquema:</strong>
-        </p>
-        <p>
-            El dataset proporciona la misma información en los diferentes csv, cada dato se encuentra en una columna diferente del csv.
-            Los datos proporcionados son los siguientes.
-        </p>
-        <ul>
-            <li><strong>Número de expediente:</strong> Se refiere al número que señala cada caso</li>
-            <li><strong>Fecha:</strong> Fecha a la que ocurrió el accidente en formato DD/MM/AA </li>
-            <li><strong>Hora:</strong> Hora del accidente en fromado HH:MM:SS</li>
-            <li><strong>Localización:</strong> Se indica el lugar donde ocurrió el accidente, especificando su número de calle, el distrito y el código del distrito en diferentes columnas.</li>
-            <li><strong>Tipo_Accidente:</strong> Hay doce tipos de accidentes:
-                <ul>
-                    <li>Alcance</li>
-                    <li>Atropello animal</li>
-                    <li>Atropello a persona</li>
-                    <li>Caída</li>
-                    <li>Choque contra obstáculo fijo</li>
-                    <li>Colisión frontal</li>
-                    <li>Colisión fronto-lateral</li>
-                    <li>Colisión lateral</li>
-                    <li>Colisión múltiple</li>
-                    <li>Despeñamiento</li>
-                    <li>Otro</li>
-                    <li>Salida de la vía</li>
-                    <li>Vuelco</li>
-                </ul>
-            </li>
-            <li><strong>Estado_meteorológico:</strong> Tipo de clima que había cuando ocurrió el accidente
-                <ul>
-                    <li>Despejado</li>
-                    <li>Granizado</li>
-                    <li>Lluvia débil</li>
-                    <li>Lluvia intensa</li>
-                    <li>Nevado</li>
-                    <li>Nublado</li>
-                    <li>Null</li>
-                    <li>Se desconoce</li>
-                </ul>
-            </li>
-            <li><strong>Tipo_vehiculo:</strong> Vehículo que provocó el accidente</li>
-            <li><strong>Tipo_persona:</strong>Persona que sufrió el accidente, habiendo como posibilidades conductor, pasajero y peatón</li>
-            <li><strong>Rango_edad:</strong>Rango de edad de la persona queprovocó el accidente</li>
-            <li><strong>sexo:</strong>Sexo de la persona pudiendo ser este hombre, mujer o desconocido</li>
-            <li><strong>lesividad:</strong> tipo de asistencia sanitario que recibió la persona
-                <ul>
-                    <li>Asistencia sanitaria ambulatoria con posteridad</li>
-                    <li>Asistencia sanitaria ambulatoria inmediata</li>
-                    <li>Asistencia solo en el lugar del accidente</li>
-                    <li>Asintencia sin ingreso</li>
-                    <li>Fallecido 24 horas</li>
-                    <li>Ingreso </li>
-                    <li>Se desconoce</li>
-                    <li>Sin asistencia</li>
-                </ul>
-            </li>
-            <li><strong>Coordenadas_num:</strong> Lugar del accidente en coordenadas</li>
-            <li><strong>Positiva_alcohol:</strong> Indica si la persona que provocó el accidente iba bajos los efectos del alcohol</li>
-            <li><strong>Positiva_droga:</strong> Indica si la persona que provocó el accidente iba bajos los efectos de las drogas</li>
-        </ul>
-
-
 
     <!-- Análisis de la licencia -->
     <section>
         <h2>2. Análisis de Licenciamiento del Conjunto de Datos</h2>
         <p>
-            <strong>Editor</strong> El Editor es el ayuntamiento de Madrid. 
+            <strong>Editor</strong> El Editor es el ayuntamiento de Madrid.
         </p>
         <p>
             <strong>Responsable del conjunto de datos</strong> Dirección General de la Policía Municipal.
@@ -318,38 +381,36 @@
             el uso, distribución y acceso libre a los datos, pero sin permitir que estos sean alterados.
         </p>
     </section>
-    
+
     <!-- Estrategia de Nombres para Recursos -->
     <section>
         <h2>3. Estrategia de Nombres para Recursos</h2>
-    
+
         <p>
             <strong>Dominio base de la URI:</strong> <code>http://accidentestrafico.org/</code>.
         </p>
-    
+
         <p>
-            <strong>Path de contexto:</strong> <code>traffic/</code>.
+            <strong>Path de contexto:</strong> <code>traffic/</code>
         </p>
-    
+
         <p>
             <strong>Definición de la ontología:</strong> <code>ontology/</code> se usará para definir las clases y propiedades de la ontología.
         </p>
-    
-        <p><strong>Ejemplo de URI para una clase:</strong> <code>http://accidentestrafico.org/traffic/ontology/Accidente</code></p>
-        
-        <p><strong>Ejemplo de URI para una propiedad:</strong> <code>http://accidentestrafico.org/traffic/ontology/tipoAccidente</code></p>
-    
+
+        <p><strong>Ejemplo de URI para una clase:</strong> <code>http://accidentestrafico.org/traffic/ontology/Accidente#</code></p>
+
+        <p><strong>Ejemplo de URI para una propiedad:</strong> <code>http://accidentestrafico.org/traffic/ontology/tipoAccidente#</code></p>
+
         <p>
             <strong>Path para datos o individuos:</strong> <code>resource/</code> (donde se almacenan los recursos individuales de cada accidente).
         </p>
-    
+
         <p>
-            <strong>Ejemplo de URI para un accidente concreto:</strong> 
-            <code>http://accidentestrafico.org/traffic/resource/Accidente/2023S040280</code>. 
+            <strong>Ejemplo de URI para un accidente concreto:</strong>
+            <code>http://accidentestrafico.org/traffic/resource/Accidente/2023S040280</code>.
             Aquí, la última parte ( <code>2023S040280</code> ) es el identificador único del accidente.
         </p>
-    
     </section>
-    
 </body>
 </html>
